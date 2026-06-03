@@ -70,3 +70,11 @@ venv.bak/
 # OS generated files
 .DS_Store
 Thumbs.db
+
+# Excluded manually
+models/saved/best.pkl
+models/saved/metrics.json
+models/saved/best_quick.pkl
+models/saved/metrics_quick.json
+data/processed/sugarcane_features.csv
+training.log
