@@ -1,0 +1,124 @@
+compositing:
+  interval_days: 15
+  months_after: 5
+  months_before: 5
+  num_expected_timesteps: 21
+data:
+  cache_dir: data/cache
+  kml_dir: data/kml
+  models_dir: models/saved
+  output_dir: outputs
+  processed_dir: data/processed
+  raw_dir: data/raw
+data_backend: gee
+default_anchor_date: '2024-09-01'
+features:
+  phenology:
+    ndvi_threshold: 0.3
+    smooth_window: 5
+  spectral_indices:
+  - NDVI
+  - EVI
+  - NDWI
+  - LSWI
+  - SAVI
+  - MSAVI
+  - NBR
+  - NDRE
+  - GNDVI
+  - NDMI
+  - CIre
+  - IRECI
+  - CCCI
+  - GRVI
+  - PSRI
+  - RVI
+  - RFDI
+  - CR
+  - NRPB
+  temporal_stats:
+  - min
+  - max
+  - mean
+  - median
+  - p10
+  - p25
+  - p75
+  - p90
+  - std
+  - range
+  - cv
+gee:
+  project_id: modern-door-482304-e0
+  service_account: ''
+inference:
+  active_model: lgb
+  model_path: models/saved/new_best.pkl
+  probability_threshold: 0.60
+models:
+  bilstm:
+    batch_size: 64
+    dense_units: 32
+    dropout: 0.3
+    epochs: 100
+    learning_rate: 0.001
+    patience: 15
+    units:
+    - 64
+    - 128
+    use_attention: true
+  cv_folds: 5
+  lightgbm:
+    class_weight: balanced
+    colsample_bytree: 0.8
+    learning_rate: 0.05
+    n_estimators: 300
+    num_leaves: 63
+    subsample: 0.8
+  random_forest:
+    class_weight: balanced
+    max_depth: null
+    min_samples_leaf: 2
+    n_estimators: 300
+  random_seed: 42
+  xgboost:
+    colsample_bytree: 0.8
+    eval_metric: aucpr
+    learning_rate: 0.05
+    max_depth: 6
+    n_estimators: 300
+    subsample: 0.8
+planetary_computer:
+  subscription_key: ''
+sampling:
+  buffer_m: 500
+  min_valid_pixels: 5
+  random_seed: 42
+sentinel1:
+  bands:
+  - VV
+  - VH
+  orbit_pass: DESCENDING
+  scale: 10
+sentinel2:
+  bands:
+  - B2
+  - B3
+  - B4
+  - B5
+  - B6
+  - B7
+  - B8
+  - B8A
+  - B11
+  - B12
+  cloud_prob_threshold: 30
+  cloud_threshold: 30
+  scale: 10
+sentinel_hub:
+  client_id: ''
+  client_secret: ''
+  instance_id: ''
+states:
+  source_states:
+  - Uttar Pradesh

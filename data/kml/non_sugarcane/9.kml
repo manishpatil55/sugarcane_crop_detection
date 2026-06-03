@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2" xmlns:gx="http://www.google.com/kml/ext/2.2" xmlns:kml="http://www.opengis.net/kml/2.2" xmlns:atom="http://www.w3.org/2005/Atom">
+<Document>
+	<name>9.kml</name>
+	<StyleMap id="msn_ylw-pushpin">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#sn_ylw-pushpin</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#sh_ylw-pushpin</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="sh_ylw-pushpin">
+		<IconStyle>
+			<scale>1.3</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+		<BalloonStyle>
+		</BalloonStyle>
+		<PolyStyle>
+			<fill>0</fill>
+		</PolyStyle>
+	</Style>
+	<Style id="sn_ylw-pushpin">
+		<IconStyle>
+			<scale>1.1</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+		<BalloonStyle>
+		</BalloonStyle>
+		<PolyStyle>
+			<fill>0</fill>
+		</PolyStyle>
+	</Style>
+	<Placemark>
+		<name>9</name>
+		<styleUrl>#msn_ylw-pushpin</styleUrl>
+		<Polygon>
+			<tessellate>1</tessellate>
+			<outerBoundaryIs>
+				<LinearRing>
+					<coordinates>
+						77.90455285704212,28.38620912460705,0 77.90435282496016,28.38641032953459,0 77.90434220253118,28.38641575244025,0 77.90431075727625,28.38644244904365,0 77.90424506291248,28.38641628676001,0 77.90421242055966,28.38643772731155,0 77.90419180633297,28.38646275995825,0 77.90414712420727,28.38647776309307,0 77.90412403001119,28.38646271533018,0 77.90408719060891,28.38646017672211,0 77.90404047522267,28.38647528094415,0 77.90401243281373,28.38645210887185,0 77.90400212803073,28.38642953510835,0 77.90398568817193,28.3863996141469,0 77.90396503342997,28.38638228441782,0 77.9039336539752,28.38635997890547,0 77.90390483489931,28.38634182309158,0 77.90343820866514,28.38584568984964,0 77.90341182644889,28.38580415347712,0 77.90338771412813,28.38576046853881,0 77.90338908849941,28.38571386753468,0 77.90339698976469,28.3856566387283,0 77.90344885424612,28.38560141173766,0 77.90350199254335,28.38555322961927,0 77.90355824845494,28.38550150175502,0 77.90361293213689,28.38544415010621,0 77.90361427839957,28.38542508117734,0 77.90363588746828,28.38538639219062,0 77.9036418076269,28.38536295481555,0 77.90363910169121,28.38533230572384,0 77.90364241940796,28.38530455006447,0 77.90362700776895,28.38525707537013,0 77.90388105551182,28.38503578449923,0 77.90476653370672,28.3859278225592,0 77.90455285704212,28.38620912460705,0 
+					</coordinates>
+				</LinearRing>
+			</outerBoundaryIs>
+		</Polygon>
+		<atom:link rel="app" href="https://www.google.com/earth/about/versions/#earth-pro" title="Google Earth Pro 7.3.7.1155"></atom:link>
+	</Placemark>
+</Document>
+</kml>
